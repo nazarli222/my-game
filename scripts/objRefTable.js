@@ -6,6 +6,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Button,
 		C3.Plugins.Mouse,
+		C3.Plugins.Touch,
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.System.Acts.Wait,
@@ -13,7 +14,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Button.Acts.SetVisible,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.TextBox.Acts.SetText
+		C3.Plugins.TextBox.Acts.SetText,
+		C3.Plugins.Touch.Cnds.OnTouchObject
 	];
 };
 self.C3_JsPropNameTable = [
@@ -54,7 +56,8 @@ self.C3_JsPropNameTable = [
 	{Sprite6: 0},
 	{answer51: 0},
 	{answer52: 0},
-	{answer53: 0}
+	{answer53: 0},
+	{Touch: 0}
 ];
 
 self.InstanceType = {
@@ -95,5 +98,6 @@ self.InstanceType = {
 	Sprite6: class extends self.ISpriteInstance {},
 	answer51: class extends self.IButtonInstance {},
 	answer52: class extends self.IButtonInstance {},
-	answer53: class extends self.IButtonInstance {}
+	answer53: class extends self.IButtonInstance {},
+	Touch: class extends self.IInstance {}
 }
